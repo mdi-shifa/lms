@@ -22,3 +22,82 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 23px 13%;
+    transition: all .40s ease;
+}
+
+.logo img{
+    height: auto;
+    width: 180px;
+    max-width: 100%;
+}
+
+.navbar{
+    display: flex;
+}
+
+.navbar a{
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: var(--p-font);
+    padding: 10px 22px;
+    transition: all .40s ease;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+.header-icons{
+    display: flex;
+    align-items: center;
+}
+
+.header-icons i{
+    margin-left: 10px;
+    font-size: 24px;
+    color: var(--text-color);
+    transition: all .40s ease;
+    margin-right: 15px;
+}
+
+.header-icons i:hover{
+    transform: scale(1.2);
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 34px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 80px 13%;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    align-items: center;
+    
+}
